@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    position: relative;
+    width: 90%;
+    height: 90vh;
+    border: 3px solid black;
+    margin-left: 5%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background: #FFE4E1;
+
+}
+
+#the_left_side {
+    border-right: 3px solid black;
+    background: #FFE4E1;
+    width: 25%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#the_left_side::-webkit-scrollbar {
+    display: none;
+}
+
+#admin-text{
+    border-bottom: 3px solid black;
+    text-align: center;
+    padding: 5px;
+    background: #FFE4E1;
+}
+
+.text {
+    border-bottom: 3px solid black;
+    padding: 5px;
+    background: #FFE4E1;
+}
+
+#admin-item {
+    height: 200px;
+    border-bottom: 3px solid black;
+    overflow: auto;
+    background: #ffffff;
+}
+
+#moder-item {
+    height: 200px;
+    border-bottom: 3px solid black;
+    overflow: auto;
+    background: #ffffff;
+}
+
+#button{
+    margin: 0 auto;
+    text-align: center;
+    width: 130px;
+    height: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 3px solid rgb(91, 91, 91);
+    background: rgb(160, 159, 159);
+    border-radius: 10px;
+    
+}
+
+#button a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#chat {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    height: 77%;
+    width: 65%;
+    border: 3px solid black;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+#input {
+    position: absolute;
+    height: 30px;
+    width: 64%;
+    border: 3px solid black;
+    bottom: 27px;
+    margin-top: 10px;
+    right: 5%;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+#send {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    right: 6%;
+    bottom: 30px;
+    background: url(image/sand.png);
+}
