@@ -1,4 +1,4 @@
-header {
+#pc {
     position: relative;
     width: 100%;
     height: 50px;
@@ -7,7 +7,7 @@ header {
 }
 
 
-header a{
+#pc a{
     position: relative;
     color: aliceblue;
     text-decoration: none;
@@ -17,7 +17,7 @@ header a{
 
 }
 
-header a:hover{
+#pc a:hover{
     position: relative;
     color:rgb(158, 160, 161);
     text-decoration: none;
@@ -26,13 +26,22 @@ header a:hover{
     padding-right: 27px;
 }
 
-#logo {
+#pc #logo {
     position: absolute;
     font-size: 16px;
     top: 14px;;
     font-family: "Pacifico", cursive;
     font-style: normal;
     left: 27px;
+}
+
+#mobile {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: black;
+    text-align: right;
 }
 
 footer {
@@ -49,4 +58,24 @@ footer p{
     text-align: center;
     font-size: 16px;
     top: 14px;
+}
+
+@media screen and (max-width:424px) {
+    #pc {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+  }
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    background: black;
+    color: aliceblue;
+    text-align: center;
+
 }
