@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Милана Хаметова, Фан проект, Милана, Хаметова">
+    <meta name="description" content="Официальный фан-сайт Миланы Хаметовой: музыка, новости, биография, чат с фанатами! Фан-проект, посвященный Милане Хаметовой: следите за новостями, слушайте музыку, общайтесь в чате!">
+    <meta name="author" content="MI-Vibe&beta;&epsilon;&tau;&alpha;">
+    <meta name="copyright" content="Все права принадлежат MI-Vibe&beta;&epsilon;&tau;&alpha;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | МИ-Vibe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="ccs/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+
+    body {
+        text-align: center;
+    }
+
+    #main_text {
+        font-family: "Pacifico", cursive;
+        width: 320px;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 60px;
+    }
+
+    #text-beta {
+        position: relative;
+        width: 150px;
+        margin: 0 auto;
+        top: 50px;
+
+    }
+
+    #text {
+        font-family: "Pacifico", cursive;
+        font-size: 24px;
+    }
+
+    #beta{
+        position: absolute;
+        font-size: 16px;
+        top: 0;
+        right: 0;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .otstup {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    #post_2 {
+        width: auto;
+        height: auto;
+        max-width: 500px;
+        min-width: 320px;
+    }
+
+    #post {
+        width: auto;
+        height: auto;
+        max-width: 500px;
+        min-width: 320px;
+        padding-left: 60px;
+    }
+
+    #footer {
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        color: aliceblue;
+        background-color: black;
+    }
+
+    #main {
+        margin-bottom:20px;
+    }
+
+    .item-flex {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #top {
+        margin-top: 100px;
+    }
+
+    .post-text {
+        font-size: 18px;
+        font-family: "Pacifico", cursive;
+    }
+
+    @media screen and (max-width: 726px) {
+        #post {
+            padding-left: 0px;
+        }
+
+        #main_text {
+            font-family: "Pacifico", cursive;
+            width: 320px;
+            height: auto;
+            margin: 0 auto;
+            padding-left: 0px;
+        }
+
+        .top-min {
+            padding-top: 20px;
+        }
+
+    }
+
+</style>
+<body>
+    <header id="header">
+        <a href="#" class="header-text logo"><b>МИ</b></a>
+        <a href="#" class="header-text links"><b>Чат</b></a>
+        <a href="#" class="header-text links"><b>Музыка</b></a>
+        <a href="#" class="header-text links"><b>Новости</b></a>
+        <a href="#" class="header-text links"><b>Биография</b></a>
+        <a href="#" class="header-text links"><b>Афиша</b></a>
+        <a href="#" class="header-text links" onclick="ClickMore()" id="more_on"><b>Ещё ▽</b></a>
+        <a href="#" class="header-text links" onclick="ClickMoreOff()" id="more_off" ><b>Ещё △</b></a>
+
+        <div id="more_menu">
+            <a href="#" class="more-text parameters"><b>Настройки</b></a>
+            <a href="#" class="more-text parameters"><b>Вопросы</b></a>
+            <a href="#" class="more-text exit"><b>Выход</b></a>
+        </div>
+    </header>
+
+    <header id="header-mobile">
+        <a href="#" class="header-text logo"><b>МИ</b></a>
+        <a href="#" class="button-burger" onclick="ClockButtonBurgerOn()" id="button_burger"></a>
+        <a href="#" class="button-exit" onclick="ClockButtonBurgerOff()" id="button_exit"></a>
+
+        <div id="menu_burger">
+            <li class="li-menu-burger"><a href="#" class="text-menu-burger ">Чат</a></li>
+            <li class="li-menu-burger"><a href="#" class="text-menu-burger ">Музыка</a></li>
+            <li class="li-menu-burger"><a href="#" class="text-menu-burger ">Новости</a></li>
+            <li class="li-menu-burger"><a href="#" class="text-menu-burger ">Биография</a></li>
+            <li class="li-menu-burger"><a href="#" class="text-menu-burger ">Афиша</a></li>
+            <li class="li-menu-burger"><a href="#" class="text-menu-burger ">Настройки</a></li>
+            <li class="li-menu-burger"><a href="#" class="text-menu-burger ">Вопросы</a></li>
+            <li class="li-exit-menu-burger"><a href="#" class="text-menu-burger exit-menu-burger">Выход</a></li>
+        </div>
+    </header>
+
+    <div id="main">
+        <div id="text-beta">
+            <h1 id="text">МИ-Vibe <h3 id="beta">&beta;&epsilon;&tau;&alpha;</h3></h1>
+        </div>
+    
+
+        <div id="top">
+            <div class="item-flex" id="post_2">
+                <div>
+                    <h2 class="post-text">Прошлые новости:</h2>
+                </div>
+                <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="muztv/15021" data-width="50%"></script>
+            </div>
+        
+            <div class="item-flex top-min" id="main_text">
+                <p class="info center">Этот фан-проект создан специально для всех фанатов Миланы. Здесь ты найдёшь всё, что нужно настоящему фанату:</p><br>
+                <p class="info otstup"><b>Чат:</b> Общайся с другими фанатами, делись впечатлениями и обсуждай всё, что связано с творчеством Миланы!</p>
+                <p class="info otstup"><b>Биография:</b> Узнай всё о творческом пути и достижениях своего кумира.</p>
+                <p class="info otstup"><b>Афиша:</b> Не пропусти ближайшие концерты Миланы в твоем городе.</p>
+                <p class="info otstup"><b>Музыка:</b> Слушай любимые треки и не пропусти новинки.</p>
+                <p class="info otstup"><b>Новости:</b> Будь в курсе всех событий из жизни Миланы.</p><br>
+                <p class="info center">Присоединяйся к МИ-Vibe и стань частью большой семьи фанатов!</p>
+            </div>
+    
+            <div class="item-flex top-min" id="post">
+                <div>
+                    <h2 class="post-text">Последние новости:</h2>
+                </div>
+                <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="MILASHKINATELEGKA/6423" data-width="50%"></script>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <label for="">Все права защищены &copy;</label>
+    </footer>
+
+
+
+    <script src="JS/index.js"></script>
+
+</body>
+</html>

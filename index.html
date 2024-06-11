@@ -111,47 +111,7 @@
 
     </div>
 
-    <script>
-        var burger = document.getElementById('burger');
-        var burger_off = document.getElementById('burger_off');
-        var menu_burger = document.getElementById('menu_burger');
-
-        var M_on = document.getElementById('m-on');
-        var M_off = document.getElementById('m-off');
-        var menu_more = document.getElementById('menu_more');
-    
-        function Menu_on() {
-            burger.style.display = 'none';
-            burger_off.style.display = 'block';
-            menu_burger.style.left = '0';
-
-            M_on.style.display = 'inline';
-            menu_more.style.left = '-210vh';
-            M_off.style.display = 'none';
-        }
-    
-        function Menu_off() {
-            burger.style.display = 'block';
-            burger_off.style.display = 'none';
-            menu_burger.style.left = '-210vh';
-        }
-
-        function m_on() {
-            M_off.style.display = 'inline';
-            M_on.style.display = 'none';
-            menu_more.style.left = '0';
-            
-            burger.style.display = 'block';
-            burger_off.style.display = 'none';
-            menu_burger.style.left = '-210vh';
-        }
-
-        function m_off() {
-            M_on.style.display = 'inline';
-            menu_more.style.left = '-210vh';
-            M_off.style.display = 'none';
-        }
-    </script>
+    <script src="JS/index.js"></script>
 
 </body>
 </html>
