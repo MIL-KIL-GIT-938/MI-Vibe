@@ -20,22 +20,37 @@
 
 <body>
     <header id="pc">
-        <a href="index.html" id="logo">МИ</a>
+        <a href="index.html" class="logo">МИ</a>
 
         <a href="chat.html">Чат</a>
         <a href="">Музыка</a>
         <a href="">Новости</a>
         <a href="">Биография</a>
+        <a href="">Настройки</a>
     </header>
 
     <header id="mobile">
-        <a href="index.html" id="logo">МИ</a>
+        <a href="index.html" class="logo">МИ</a>
+        
+        <button id="burger" onclick="Menu_on()"></button>
 
-        <a href="chat.html">Чат</a>
-        <a href="">Музыка</a>
-        <a href="">Новости</a>
-        <a href="">Биография</a>
+        <button id="exit" onclick="Menu_off()"></button>
+        
     </header>
+
+    <div id="menu_burger">
+        <div class="barrier"></div>
+        <li><a href="chat.html">Чат</a></li>
+        <div class="barrier"></div>
+        <li><a href="">Музыка</a></li>
+        <div class="barrier"></div>
+        <li><a href="">Новости</a></li>
+        <div class="barrier"></div>
+        <li><a href="">Биография</a></li>
+        <div class="barrier"></div>
+        <li><a href="">Настройки</a></li>
+        <div class="barrier"></div>
+    </div>
 
     <div id="main">
 
@@ -64,5 +79,23 @@
     <footer>
         <p>Все права защищены &copy;</p>
     </footer>
+    
+    <script>
+        var burger = document.getElementById('burger');
+        var exit = document.getElementById('exit');
+        var menu_burger = document.getElementById('menu_burger');
+    
+        function Menu_on() {
+            burger.style.display = 'none';
+            exit.style.display = 'block';
+            menu_burger.style.left = '0';
+        }
+    
+        function Menu_off() {
+            burger.style.display = 'block';
+            exit.style.display = 'none';
+            menu_burger.style.left = '-110vh';
+        }
+    </script>
 </body>
 </html>

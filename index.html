@@ -2,6 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Милана Хаметова, Фан проект, Милана, Хаметова">
+    <meta name="description" content="Официальный фан-сайт Миланы Хаметовой: музыка, новости, биография, чат с фанатами! Фан-проект, посвященный Милане Хаметовой: следите за новостями, слушайте музыку, общайтесь в чате!">
+    <meta name="author" content="MI-Vibe&beta;&epsilon;&tau;&alpha;">
+    <meta name="copyright" content="Все права принадлежат MI-Vibe&beta;&epsilon;&tau;&alpha;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная | МИ-Vibe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,24 +16,62 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
+<style>
+
+
+</style>
+
 <body>
     <header id="pc">
-        <a href="index.html" id="logo">МИ</a>
+        <a href="index.html" class="logo">МИ</a>
 
         <a href="chat.html">Чат</a>
-        <a href="">Музыка</a>
+        <a href="">Музыка</a >
         <a href="">Новости</a>
         <a href="">Биография</a>
+        <a href="">Афиша</a>
+        <a href="#" onclick="m_off()" id="m-off">Ещё △</a>
+        <a href="#" onclick="m_on()" id="m-on">Ещё ▽</a>
+
+    
+
     </header>
 
     <header id="mobile">
-        <a href="index.html" id="logo">МИ</a>
+        <a href="index.html" class="logo">МИ</a>
+        
+        <button id="burger" onclick="Menu_on()"></button>
 
-        <a href="chat.html">Чат</a>
-        <a href="">Музыка</a>
-        <a href="">Новости</a>
-        <a href="">Биография</a>
+        <button id="burger_off" onclick="Menu_off()"></button>
+         
     </header>
+
+    <div id="menu_more">
+        <div class="barrier"></div>
+        <li><a href="chat.html">Настройки</a></li>
+        <div class="barrier"></div>
+        <li><a href="chat.html">Вопросы</a></li>
+        <div class="barrier"></div>
+        <li id="simvol"><a id="exit" href="">Выход</a></li>
+    </div>
+
+    <div id="menu_burger">
+        <div class="barrier"></div>
+        <li><a href="chat.html">Чат</a></li>
+        <div class="barrier"></div>
+        <li><a href="">Музыка</a></li>
+        <div class="barrier"></div>
+        <li><a href="">Новости</a></li>
+        <div class="barrier"></div>
+        <li><a href="">Биография</a></li>
+        <div class="barrier"></div>
+        <li><a href="">Настройки</a></li>
+        <div class="barrier"></div>
+        <li><a href="">Афиша</a></li>
+        <div class="barrier"></div>
+        <li id="exit_2"><a id="exit" href="">Выход</a></li>
+        <div class="barrier"></div>
+    </div>
     
 
     <img src="image/1.jpg" alt="" id="foto_1">
@@ -37,35 +79,79 @@
     <img src="image/3.jpg" alt="" id="foto_3">
 
     <div id="main">
-        <h1 id="text">МИ-Vibe</h1>
+
+        <div id="text-beta">
+            <h1 id="text">МИ-Vibe <h3 id="beta">&beta;&epsilon;&tau;&alpha;</h3></h1>
+        </div>
+
+        <div id="post_2">
+            <div>
+                <h2>Прошлые новости:</h2>
+            </div>
+            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="muztv/15021" data-width="50%"></script>
+        </div>
 
         <div id="main_text">
-            <p id="info">
-                <br><br>Этот фан-проект создан специально для всех фанатов Миланы. Здесь ты найдёшь всё, что нужно настоящему фанату:<br><br>
-    
-    
-    
-                <b>Музыка:</b> Слушай любимые треки и не пропусти новинки. <br>
-    
-                <b>Новости:</b> Будь в курсе всех событий из жизни Миланы. <br>
-    
-                <b>Биография:</b> Узнай всё о творческом пути и достижениях своего кумира. <br>
-    
-                <b>Афиша:</b> Не пропусти ближайшие концерты Миланы в твоем городе. <br>
-    
-                <b>Чат:</b> Общайся с другими фанатами, делись впечатлениями и обсуждай всё, что связано с творчеством Миланы! <br><br>
-    
-    
-    
-                Присоединяйся к МИ-Vibe и стань частью большой семьи фанатов! <br>
-            </p>
+                <p class="info center">Этот фан-проект создан специально для всех фанатов Миланы. Здесь ты найдёшь всё, что нужно настоящему фанату:</p><br>
+                <p class="info otstup"><b>Чат:</b> Общайся с другими фанатами, делись впечатлениями и обсуждай всё, что связано с творчеством Миланы!</p>
+                <p class="info otstup"><b>Биография:</b> Узнай всё о творческом пути и достижениях своего кумира.</p>
+                <p class="info otstup"><b>Афиша:</b> Не пропусти ближайшие концерты Миланы в твоем городе.</p>
+                <p class="info otstup"><b>Музыка:</b> Слушай любимые треки и не пропусти новинки.</p>
+                <p class="info otstup"><b>Новости:</b> Будь в курсе всех событий из жизни Миланы.</p><br>
+                <p class="info center">Присоединяйся к МИ-Vibe и стань частью большой семьи фанатов!</p><br><br>
+                <p class="info center">Все права защищены &copy;</p>
+        </div>
+
+        <div id="post">
+            <div>
+                <h2>Последние новости:</h2>
+            </div>
+            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="MILASHKINATELEGKA/6423" data-width="100%"></script>
         </div>
 
     </div>
 
-    <footer>
-        <p>Все права защищены &copy;</p>
-    </footer>
+    <script>
+        var burger = document.getElementById('burger');
+        var burger_off = document.getElementById('burger_off');
+        var menu_burger = document.getElementById('menu_burger');
+
+        var M_on = document.getElementById('m-on');
+        var M_off = document.getElementById('m-off');
+        var menu_more = document.getElementById('menu_more');
+    
+        function Menu_on() {
+            burger.style.display = 'none';
+            burger_off.style.display = 'block';
+            menu_burger.style.left = '0';
+
+            M_on.style.display = 'inline';
+            menu_more.style.left = '-210vh';
+            M_off.style.display = 'none';
+        }
+    
+        function Menu_off() {
+            burger.style.display = 'block';
+            burger_off.style.display = 'none';
+            menu_burger.style.left = '-210vh';
+        }
+
+        function m_on() {
+            M_off.style.display = 'inline';
+            M_on.style.display = 'none';
+            menu_more.style.left = '0';
+            
+            burger.style.display = 'block';
+            burger_off.style.display = 'none';
+            menu_burger.style.left = '-210vh';
+        }
+
+        function m_off() {
+            M_on.style.display = 'inline';
+            menu_more.style.left = '-210vh';
+            M_off.style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>
