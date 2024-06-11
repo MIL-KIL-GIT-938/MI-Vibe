@@ -95,7 +95,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    background: url(/image/button.png);
+    background: url(image/button.png);
     right: 10px;
     top: 10px;
     transition: 0.5s;
@@ -105,7 +105,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    background: url(/image/button-exit.png);
+    background: url(image/button-exit.png);
     right: 10px;
     top: -200vh;
     rotate: 1000deg;
